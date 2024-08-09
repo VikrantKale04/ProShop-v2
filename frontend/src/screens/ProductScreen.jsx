@@ -32,7 +32,7 @@ const ProductScreen = () => {
 
     const addToCartHandler = () => {
         dispatch(addToCart({ ...product, qty }));
-        toast.success("Item added to cart")
+        // toast.success("Item added to cart")
         navigate('/cart')
     }
 
