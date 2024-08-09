@@ -1,7 +1,8 @@
 import dotenv from 'dotenv';
 dotenv.config();
-const { PAYPAL_CLIENT_ID, PAYPAL_APP_SECRET, PAYPAL_API_URL } = process.env;
+const { PAYPAL_CLIENT_ID, PAYPAL_APP_SECRET } = process.env;
 
+const PAYPAL_API_URL = "https://api-m.sandbox.paypal.com"
 /**
  * Fetches an access token from the PayPal API.
  * @see {@link https://developer.paypal.com/reference/get-an-access-token/#link-getanaccesstoken}
